@@ -2,22 +2,22 @@ const goodsItems = [
     {
         title: "Мультисплит-системы",
         description: ["Инверторные мультисплит-системы"],
-        image: "../img/Cools_Plus_big 2.svg"
+        image: "./img/Cools_Plus_big 2.svg"
     },
     {
         title: "Бытовые сплит-системы",
         description: ["Инверторные сплит-системы", "Сплит-системы постоянной производительности "],
-        image: "../img/Cools_Plus_big 2.svg"
+        image: "./img/Cools_Plus_big 2.svg"
     },
     {
         title: "ИНВЕРТОРНЫЕ КОММЕРЧЕСКИЕ СПЛИТ-СИСТЕМЫ",
         description: ["Инверторные кассетные сплит-системы", "Инверторные канальные сплит-системы", "Инверторные напольно-потолочные сплит-системы"],
-        image: "../img/Cools_Plus_big 2.svg"
+        image: "./img/Cools_Plus_big 2.svg"
     },
     {
         title: "КОММЕРЧЕСКИЕ СПЛИТ-СИСТЕМЫ",
         description: ["Кассетные сплит-системы", "Канальные сплит-системы", "Напольно-потолочные сплит-системы"],
-        image: "../img/Cools_Plus_big 2.svg"
+        image: "./img/Cools_Plus_big 2.svg"
     }
 ];
 
@@ -38,7 +38,7 @@ function generateGoodsItems() {
             <div class="column">
                 <h5>${item.title}</h5>
                 <ul>${descriptionList}</ul>
-                <button class="goods-button">Каталог <img src = "../img/Arrow-white.svg" alt="arrow"></button>
+                <button class="goods-button">Каталог <img src = "./img/Arrow-white.svg" alt="arrow"></button>
             </div>
             <div class="column">
                 <img src="${item.image}" alt="${item.title}" class="item-image">
