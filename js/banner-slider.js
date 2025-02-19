@@ -2,14 +2,14 @@ const bannersData = [
     {
         title: "Новая серия",
         subtitle: "TOSOT Lyra X",
-        imgSrc: "../img/tosot.svg",
-        bannerImg: "../img/кондей.png"
+        imgSrc: "./img/tosot.svg",
+        bannerImg: "./img/кондей.png"
     },
     {
         title: "Новая коллекция",
         subtitle: "Рандомный кондей",
-        imgSrc: "../img/lessar.svg",
-        bannerImg: "../img/EGO 1.png"
+        imgSrc: "./img/lessar.svg",
+        bannerImg: "./img/EGO 1.png"
     }
 ];
 
@@ -23,7 +23,7 @@ function createBanner(data) {
 
     const arrowPrev = document.createElement('div');
     arrowPrev.classList.add('arrow-prev');
-    arrowPrev.innerHTML = `<img src="../img/arrow-slider.svg" alt="arrow-prev" onclick="prevBanner()">`;
+    arrowPrev.innerHTML = `<img src="./img/arrow-slider.svg" alt="arrow-prev" onclick="prevBanner()">`;
 
     const content = document.createElement('div');
     content.classList.add('banner__content', 'd-flex', 'flex-column', 'justify-content-around');
@@ -38,7 +38,7 @@ function createBanner(data) {
 
     const arrowNext = document.createElement('div');
     arrowNext.classList.add('arrow-next');
-    arrowNext.innerHTML = `<img src="../img/arrow-slider.svg" alt="arrow-next" onclick="nextBanner()">`;
+    arrowNext.innerHTML = `<img src="./img/arrow-slider.svg" alt="arrow-next" onclick="nextBanner()">`;
 
     banner.appendChild(arrowPrev);
     banner.appendChild(content);
