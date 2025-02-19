@@ -160,7 +160,7 @@ h1 {
     padding-right: 30px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 820px) {
   .first-part,
   .second-part,
   .third-part {
