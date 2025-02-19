@@ -16,12 +16,12 @@ const advantagesItems = [
     },
     {
         title: "Надежность",
-        image: "../img/flash-circle.svg", 
+        image: "./img/flash-circle.svg", 
         text: "Текст"
     },
     {
         title: "Опт",
-        image: "../img/percentage-square.png", 
+        image: "./img/percentage-square.png", 
         text: "Оптовые цены, бонусы и акции для зарегистрированных пользователей"
     },
     {
