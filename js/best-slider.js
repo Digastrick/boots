@@ -4,42 +4,42 @@ const products = [
         category: "Инверторные сплит-системы Lessar",
         wholesalePrice: { rub: '67 347.51 ', usd: '767' },
         retailPrice: { rub: '67 347.51' },
-        image: '../img/Tiger_2022_1 3.png'
+        image: './img/Tiger_2022_1 3.png'
     },
     {
         name: "Сплит-система QV-LA12WAE/QN-LA12WAE",
         category: "Инверторные сплит-системы Quattroclima",
         wholesalePrice: { rub: '67 347.51 ', usd: '767' },
         retailPrice: { rub: '67 347.51' },
-        image: '../img/EGO 1.png'
+        image: './img/EGO 1.png'
     },
     {
         name: "Сплит-система T09H-SCW/I/ T09H-SCW/O",
         category: "Инверторные сплит-системы TOSOT",
         wholesalePrice: { rub: '67 347.51 ', usd: '767' },
         retailPrice: { rub: '67 347.51' },
-        image: '../img/Flexcool 1.png'
+        image: './img/Flexcool 1.png'
     },
     {
         name: "Сплит-система T09H-SCW/I/ T09H-SCW/O",
         category: "Инверторные сплит-системы TOSOT",
         wholesalePrice: { rub: '67 347.51 ', usd: '767' },
         retailPrice: { rub: '67 347.51' },
-        image: '../img/FLEXCOOL-2022-lit 1.png'
+        image: './img/FLEXCOOL-2022-lit 1.png'
     },
     {
         name: "Сплит-система LS-HE12KCE2/LU-HE12KCE2",
         category: "Инверторные сплит-системы Lessar",
         wholesalePrice: { rub: '67 347.51 ', usd: '767' },
         retailPrice: { rub: '67 347.51' },
-        image: '../img/Amigo-1 2.png'
+        image: './img/Amigo-1 2.png'
     },
     {
         name: "Сплит-система LS-HE12KCE2/LU-HE12KCE2",
         category: "Категория 3",
         wholesalePrice: { rub: '67 347.51 ', usd: '767' },
         retailPrice: { rub: '67 347.51' },
-        image: '../img/Enigma 1.png'
+        image: './img/Enigma 1.png'
     },
     
 ];
