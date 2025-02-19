@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Boots</title>
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <main>
+    <section class="section__start " id="section__start">
+    <header class="header-main ">
+    <div class="first-part d-flex align-items-center justify-content-between ">
+
+        
+    <div class="well d-flex align-items-center justify-content-around">
+    <div class="well-wrapper d-flex ">
+        <p class="well-1">1 У.Е. = 79 P </p>
+        <div class="divider"></div>
+        <p class="well-2">$1 = 87.37</p>
+    </div>
+    <p class="well-date">Курс на 27.06.2024</p>
+</div>
+<div class="user-action d-flex">
+    <button class="login">Вход</button>
+    <button class="registration">Регистрация</button>
+    <button class=" location d-flex justify-content-between" id="locationButton">Выберите локацию 
+        <svg width="11" id="locationIcon" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.89836 10.477C6.99887 9.88074 10 7.97244 10 4.89286C10 2.40758 7.98528 0.392857 5.5 0.392857C3.01472 0.392857 1 2.40758 1 4.89286C1 7.97244 4.00113 9.88074 5.10164 10.477C5.3521 10.6127 5.6479 10.6127 5.89836 10.477ZM5.5 6.8215C6.56512 6.8215 7.42857 5.95805 7.42857 4.89293C7.42857 3.82781 6.56512 2.96435 5.5 2.96435C4.43488 2.96435 3.57143 3.82781 3.57143 4.89293C3.57143 5.95805 4.43488 6.8215 5.5 6.8215Z" fill="#F03A3A"/>
+            <path d="M9.39711 9.71429C9.79207 10.0075 10 10.34 10 10.6786C10 11.0171 9.79207 11.3497 9.39711 11.6429C9.00216 11.936 8.43409 12.1795 7.75 12.3488C7.06591 12.518 6.28992 12.6071 5.5 12.6071C4.71009 12.6071 3.93409 12.518 3.25 12.3488C2.56591 12.1795 1.99784 11.936 1.60289 11.6429C1.20793 11.3497 1 11.0171 1 10.6786C1 10.34 1.20793 10.0075 1.60289 9.71429" stroke="#F03A3A" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            
+    </button>
+    <div class="custom-modal" id="locationModal">
+    <button type="button" class="close-button" id="closeModal">
+        <img src="../img/close-circle.svg" alt="close-circle">
+    </button>
+    <h1 class="custom-modal__title mt-3 ">
+        Выберете ваш город
+    </h1>
+    <div class="input-container mt-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="Поиск по названию...">
+    </div>
+    <div id="locationList" class="location-container mt-4"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="second-part d-flex align-items-center justify-content-between">
+    <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="input-container low">
+        <input type="text" class="form-control" placeholder="Поиск">
+    </div>
+    <div class="logo">
+        <img src="../img/logo.svg" alt="logo">
+    </div>
+    <div class="d-flex align-items-center">
+        <a class="telephon" href="tel:88003330170">8 (800) 333 01 70</a>
+        <div class="img-wrapper d-flex ">
+        <img src="../img/stats.svg" alt="stats">
+        <img src="../img/like.svg" alt="like">
+        <img src="../img/lk.svg" alt="lk">
+        <img src="../img/basket.svg" alt="basket">
+    </div>
+    </div>
+</div>
+<div class="third-part d-flex align-items-center justify-content-between">
+    
+    <button class="button-catalog d-flex align-items-center justify-content-center" id="toggleButton">
+        <div>
+        <div class="bars bar1"></div>
+        <div class="bars bar2"></div>
+        <div class="bars bar3"></div>
+    </div>
+         Каталог</button>
+    <nav class="menu">
+        <ul class="menu__list d-flex list-unstyled mb-0" id="menuList">
+
+        </ul>
+    </nav>
+    <button class="button-selection">Подбор кондиционеров</button>
+</div>
+<div class="catalog" id="catalog">
+    <div class="sidebar">
+        <h3>Home & BUSINESS Prof</h3>
+        <div class="menu-item" data-category="all">
+            Перейти в общий каталог
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="inverter-split">
+            Инверторные сплит-системы
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="constant-performance">
+            Сплит-системы постоянной производительности
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="multi-split">
+            Инверторные мультисплит-системы
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="cassette-split">
+            Инверторные касетные сплит-системы
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="floor-ceiling">
+            Напольно-потолочные сплит-системы
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="ventilation">
+            Вентиляционное оборудование
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="accessories">
+            Аксессуары
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+        <div class="menu-item" data-category="sale">
+            Распродажа
+            <span class="checkmark"><img src="../img/Arrow.svg" alt="arrow"></span>
+            <span class="arrow"><img src="../img/Arrow-long.svg" alt="arrow-long"></span>
+        </div>
+    </div>
+
+    <div class="products" id="products">
+        <h3>Товары</h3>
+        
+    </div>
+</div>
+</header>
+    <h1 >
+        ОПТОВАЯ ПРОДАЖА КОНДИЦИОНЕРОВ И КОМПЛЕКТУЮЩИХ - КЛИМАТПРОФ.ONLINE
+    </h1>
+    <div class="banner-slider d-flex" id="banner-slider">
+   
+    </div>
+    <div class="best-offers__slider d-flex flex-column
+    ">
+        <h1>Лучшие предложения месяца</h1>
+        <img src="../img/arrow-slider.svg" alt="arrow-prev" class="arrow-offer-prev" onclick="moveSlider(-1)">
+        <div class="slider-container">
+            <div class="slider-items" id="slider-items">
+                
+            </div>
+        </div>
+        <img src="../img/arrow-slider.svg" alt="arrow-next" class="arrow-offer-next" onclick="moveSlider(1)">
+    </div>
+    <div class="goods" id="goods">
+       <strong>
+        <h1>
+            Каталог
+        </h1>
+    </strong>
+        <div class="goods-container"></div>
+    </div>
+    <div class="advantages">
+        <h1>
+            Преимущества КЛИМАТПРОФ.ONLINE:
+        </h1>
+        <div class="advantages-container"></div>
+    </div>
+    <div class="brands">
+        <h1>Бренды</h1>
+        <div>
+            <img src="../img/fujitsu.svg" alt="logo">
+            <img src="../img/lessar.svg" alt="logo">
+            <img src="../img/tosot.svg" alt="logo">
+            <img src="../img/QUATTROCLIMA-logo 3.svg" alt="logo">
+            <img src="../img/dahaci-logo-brown 2.svg" alt="logo">
+         </div>
+    </div>
+    <div class="video-container">
+        <!-- Основное видео -->
+        <div class="video-placeholder">
+            <div class="image-section">
+                <img src="../img/6.svg" alt="Video Thumbnail" class="video-thumbnail">
+            </div>
+            <div class="text-section">
+                <h3>Смотрите наш новый обзор на нашем YouTube канале</h3>
+                <p>Обзор кондиционера постоянной производительности DAHACI FreshMe</p>
+            </div>
+            <button class="play-button" data-video-id="main-video">
+                <img src="../img/Polygon 10.svg" alt="Play" class="play-icon">
+            </button>
+        </div>
+        <video id="main-video" class="video" controls>
+            <source src="path/to/your/video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    
+        <!-- Дополнительные видео -->
+        <div class="small-video-container">
+            <div class="small-video-placeholder">
+                <div class="image-section">
+                    <img src="../img/youtube-cover-about-2022-final-2 copy 1.jpg" alt="Small Video Thumbnail" class="video-thumbnail">
+                    <button class="play-button" data-video-id="small-video-1">
+                        <img src="../img/Polygon 10.svg" alt="Play" class="play-icon">
+                    </button>
+                </div>
+                <div class="video-description">
+                    Видеообзор Tosot CLIVIA
+                </div>
+                <video  id="small-video-1" class="small-video" controls>
+                    <source src="path/to/your/small-video1.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+    
+            <div class="small-video-placeholder">
+                <div class="image-section">
+                    <img src="../img/youtube-cover-vebinar-tosot copy 1.jpg" alt="Small Video Thumbnail" class="video-thumbnail">
+                    <button class="play-button" data-video-id="small-video-2">
+                        <img src="../img/Polygon 10.svg" alt="Play" class="play-icon">
+                    </button>
+                </div>
+                <div class="video-description">
+                    Видеообзор Dahaci NiceMe
+                </div>
+                <video id="small-video-2" class="small-video" controls>
+                    <source src="path/to/your/small-video2.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+    
+            <div class="small-video-placeholder">
+                <div class="image-section">
+                    <img src="../img/youtube-cover-about-trip-kazan copy 1.png" alt="Small Video Thumbnail" class="video-thumbnail">
+                    <button class="play-button" data-video-id="small-video-3">
+                        <img src="../img/Polygon 10.svg" alt="Play" class="play-icon">
+                    </button>
+                </div>
+                <div class="video-description">
+                    Видеообзор Tosot CLIVIA
+                </div>
+                <video id="small-video-3" class="small-video" controls>
+                    <source src="path/to/your/small-video3.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <div class="news">
+        <h1>
+            Новости
+        </h1>
+        <div class="news-container">
+        <div class="news-1">
+            <h3>
+                LYRA X – НОВАЯ, УЛУЧШЕННАЯ ВЕРСИЯ ПОПУЛЯРНОЙ СЕРИИ LYRA INVERTER
+            </h3>
+            <div>
+                10 июня 2024
+            </div>
+        </div>
+        <div class="news-2">
+            <h3>
+                ПРАЙС-ЛИСТЫ В ЛИЧНОМ КАБИНЕТЕ
+            </h3>
+            <div>
+                20 июня 2024
+            </div>
+        </div>
+        <div class="news-3">
+            <h3>
+                NATAL INVERTER – НОВАЯ БАЗОВАЯ ИНВЕРТОРНАЯ МОДЕЛЬ TOSOT
+            </h3>
+            <div>
+                20 июня 2024
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__subscribe">
+        <h5 class="footer__title">Подписаться на рассылку</h5>
+        <div class="footer__email-sub">
+        <input type="text" class="footer__input" placeholder="Введите ваш email">
+        <button class="footer__button">Отправить</button>
+    </div>
+    </div>
+    <div class="footer__content">
+        <div class="footer__content-wrapper">
+        <div class="footer__logo">
+            <img src="../img/logo-white.png" alt="logo" class="footer__logo-img">
+        </div>
+        <div class="footer__menu">
+            <ul class="footer__list">
+                <li class="footer__list-item">Каталог</li>
+                <li class="footer__list-item">Акции</li>
+                <li class="footer__list-item">Условия работы</li>
+                <li class="footer__list-item">Гарантийное обращение</li>
+                <li class="footer__list-item">Контакты</li>
+                <li class="footer__list-item">Способы оплаты</li>
+                <li class="footer__list-item">Стать партнером</li>
+            </ul>
+        </div>
+        <div class="footer__socials">
+            <div class="footer__socials-title">Наши соц.сети</div>
+            <div class="footer__socials-links">
+                <a href="" target="_blank" class="footer__social-link">
+                    <img src="../img/basil_vk-solid.png" alt="vk" class="footer__social-icon">
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <img src="../img/ei_sc-telegram.png" alt="telegram" class="footer__social-icon">
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <img src="../img/Page-1.png" alt="insta" class="footer__social-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer__contact">
+            <div class="footer__callback">
+                <p class="footer__callback-title">Заказать обратный звонок</p>
+                <p class="footer__phone">
+                    <a href="tel:+78003330170" class="footer__phone-link">8 800 333-01-70</a>
+                </p>
+            </div>
+            <div class="footer__email">
+                <div class="footer__email-title">Почта</div>
+                <div  class="footer__email">
+                    <a href="mailto:info@klimatprof.online" class="footer__email-link">info@klimatprof.online</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer__info">
+            <div class="footer__info-text">
+                <p>Общество с ограниченной ответственностью «ТРЕЙДКОН», ОГРН: 1167847364079, 197022, г. Санкт-Петербург, проспект Медиков, 7
+                    КЛИМАТПРОФ.ONLINE - оптовая продажа кондиционеров и климатической техники на территории РФ</p>
+                <p>© Сайт принадлежит ООО «ТРЕЙДКОН»</p>
+            </div>
+            <div class="footer__payment-methods">
+                <img src="../img/sim.png" alt="mir" class="footer__payment-icon">
+                <img src="../img/Group 458.png" alt="master" class="footer__payment-icon">
+                <img src="../img/visa.png" alt="visa" class="footer__payment-icon">
+            </div>
+        </div>
+    </div>
+</footer>
+
+</section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../src/js/location-pop.js"></script>
+  <script src="../src/js/menu.js"></script>
+  <script src="../src/js/catalog.js"></script>
+  <script src="../src/js/banner-slider.js"></script>
+  <script src="../src/js/best-slider.js"></script>
+  <script src="../src/js/goods.js"></script>
+  <script src="../src/js/advantages.js"></script>
+  <script src="../src/js/video.js"></script>
+</body>
+</html>
