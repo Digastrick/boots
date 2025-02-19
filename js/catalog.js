@@ -9,22 +9,22 @@ const productsData = {
     'inverter-split': {
         logos: [
             {
-                logo: '../img/fujitsu.svg',
+                logo: './img/fujitsu.svg',
                 items: [
-                    { name: 'Interios', img: '../img/Fujitsu-INTERIOS-silver 1.png' },
-                    { name: 'Genios', img: '../img/Fujitsu-GENIOS 2.png' },
-                    { name: 'Clarios', img: '../img/Clarios 2.png' },
+                    { name: 'Interios', img: './img/Fujitsu-INTERIOS-silver 1.png' },
+                    { name: 'Genios', img: './img/Fujitsu-GENIOS 2.png' },
+                    { name: 'Clarios', img: './img/Clarios 2.png' },
                 ],
             },
             {
-                logo: '../img/lessar.svg',
+                logo: './img/lessar.svg',
                 items: [
-                    { name: 'Tiger New', img: '../img/Tiger_2022_1 3.png' },
-                    { name: 'Ego', img: '../img/EGO 1.png' },
-                    { name: 'FlexCool', img: '../img/Flexcool 1.png' },
-                    { name: 'FlexCool New', img: '../img/FLEXCOOL-2022-lit 1.png' },
-                    { name: 'Amigo', img: '../img/Amigo-1 2.png' },
-                    { name: 'Enigma', img: '../img/Enigma 1.png' },
+                    { name: 'Tiger New', img: './img/Tiger_2022_1 3.png' },
+                    { name: 'Ego', img: './img/EGO 1.png' },
+                    { name: 'FlexCool', img: './img/Flexcool 1.png' },
+                    { name: 'FlexCool New', img: './img/FLEXCOOL-2022-lit 1.png' },
+                    { name: 'Amigo', img: './img/Amigo-1 2.png' },
+                    { name: 'Enigma', img: './img/Enigma 1.png' },
                 ],
             },
         ],
