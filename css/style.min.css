@@ -2,22 +2,22 @@
 @font-face {
   font-family: "Gotham Pro";
   font-weight: 400px;
-  src: url("../../src/fonts/Gotham Pro.ttf") format("truetype"), url("../../src/fonts/Gotham-Pro.woff") format("woff"), url("../../src/fonts/Gotham Pro.woff2") format("woff2");
+  src: url("../fonts/Gotham Pro.ttf") format("truetype"), url("../fonts/Gotham-Pro.woff") format("woff"), url("../fonts/Gotham Pro.woff2") format("woff2");
 }
 @font-face {
   font-family: "Gotham Pro Light";
   font-weight: 400px;
-  src: url("../../src/fonts/Gotham Pro light.ttf") format("truetype"), url("../../src/fonts/Gotham-Pro-light.woff") format("woff"), url("../../src/fonts/Gotham Pro light.woff2") format("woff2");
+  src: url("../fonts/Gotham Pro light.ttf") format("truetype"), url("../fonts/Gotham-Pro-light.woff") format("woff"), url("../fonts/Gotham Pro light.woff2") format("woff2");
 }
 @font-face {
   font-family: "CenturyGothic";
   font-weight: 400px;
-  src: url("../../src/fonts/CenturyGothic.ttf") format("truetype"), url("../../src/fonts/CenturyGothic.woff") format("woff"), url("../../src/fonts/CenturyGothic.woff2") format("woff2");
+  src: url("../fonts/CenturyGothic.ttf") format("truetype"), url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Geologica";
   font-weight: 600px;
-  src: url("../../src/fonts/Geologica SemiBold Regular.ttf") format("truetype"), url("../../src/fonts/Geologica-SemiBold-Regular.woff") format("woff"), url("../../src/fonts/Geologica SemiBold Regular.woff2") format("woff2");
+  src: url("../fonts/Geologica SemiBold Regular.ttf") format("truetype"), url("../fonts/Geologica-SemiBold-Regular.woff") format("woff"), url("../Geologica SemiBold Regular.woff2") format("woff2");
 }
 * {
   margin: 0;
@@ -558,7 +558,7 @@ h1 {
 .banner__img {
   max-width: 1170px;
   width: 100vw;
-  background-image: url("../../img/couple-moving-new-home.svg");
+  background-image: url("../img/couple-moving-new-home.svg");
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -1374,7 +1374,7 @@ h1 {
 }
 
 .news-1 {
-  background-image: url("../../img/2.2 350x233.jpg");
+  background-image: url("../img/2.2 350x233.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1391,7 +1391,7 @@ h1 {
 }
 
 .news-2 {
-  background-image: url("../../img/Image0001 copy 1.png");
+  background-image: url("../img/Image0001 copy 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1410,7 +1410,7 @@ h1 {
 }
 
 .news-3 {
-  background-image: url("../../img/Mask group.png");
+  background-image: url("../img/Mask group.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1755,7 +1755,7 @@ footer {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-image: url("../../img/glass.svg");
+  background-image: url("../img/glass.svg");
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
